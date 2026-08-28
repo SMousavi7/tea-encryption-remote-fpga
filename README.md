@@ -371,7 +371,7 @@ The IP package contains:
 axi-tea-ip/
 ├── component.xml
 │
-├── src/
+├── source/
 │   ├── axi4_lite_slave.v
 │   └── tea_encrypt.v
 │
