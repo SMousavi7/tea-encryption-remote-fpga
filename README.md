@@ -106,7 +106,7 @@ During each round, the internal state is updated using additions, XOR operations
 The TEA encryption hardware is implemented in:
 
 ```text
-hardware/axi-tea-ip/src/tea_encrypt.v
+hardware/axi-tea-ip/source/tea_encrypt.v
 ```
 
 The module receives:
@@ -143,7 +143,7 @@ The TEA hardware core is exposed to the Zynq processor through a custom **AXI4-L
 The AXI interface is implemented in:
 
 ```text
-hardware/axi-tea-ip/src/axi4_lite_slave.v
+hardware/axi-tea-ip/source/axi4_lite_slave.v
 ```
 
 The AXI slave acts as the bridge between the ARM processor and the TEA hardware accelerator.
@@ -225,10 +225,10 @@ The complete architecture is:
                     Remote FPGA Board
              ┌────────────────────────────┐
              │                            │
-             │     Zynq Processing       │
-             │         System            │
+             │     Zynq Processing        │
+             │         System             │
              │                            │
-             │        ARM CPU            │
+             │        ARM CPU             │
              │           │                │
              │           │ AXI4-Lite      │
              │           ▼                │
